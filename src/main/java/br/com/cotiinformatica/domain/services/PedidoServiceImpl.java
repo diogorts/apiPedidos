@@ -21,13 +21,13 @@ import br.com.cotiinformatica.repositories.PedidoRepository;
 public class PedidoServiceImpl implements PedidoService {
 	
 	@Autowired
-	private PedidoRepository pedidoRepository;
+	protected PedidoRepository pedidoRepository;
 	
 	@Autowired
-	private ModelMapper modelMapper;
+	protected ModelMapper modelMapper;
 	
 	@Autowired
-	private MessageProducerComponent messageProducerComponent;
+	protected MessageProducerComponent messageProducerComponent;
 	
 	@Override
 	public PedidoResponse criar(PedidoRequest request) {		
